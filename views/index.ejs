@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>번역기</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>GPT API를 이용한 번역기</h1>
+    <div class="translator-container">
+        <form action="/" method="post">
+            <div class="flex_row">
+                <div class="input-container">
+                    <label for="content">번역할 내용을 입력하세요</label>
+                    <textarea id="content" name="content" required><%= typeof userContent !== 'undefined' ? userContent : '' %></textarea>
+                </div>
+                <div class="result-container">
+                    <label for="translation">번역 결과</label>
+                    <div id="translation"><%= translation || '' %></div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit">번역하기</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
