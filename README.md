@@ -1,5 +1,7 @@
 # using-GPT-API-to-make-translator 
 
+api를 가져와서 사용하는 것을 연습해보기 위해 간단하게 만들어봤습니다 
+
 ### 사용한 패키지는 아래와 같습니다
 
 ### npm i ejs express body-parser openai dotenv
